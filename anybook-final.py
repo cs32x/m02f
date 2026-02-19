@@ -1,8 +1,8 @@
 # Prompt for and then open that book file
 my_book = input('What book would you like to read? ')
 
+# Print every line in the book
 with open('txts/' + my_book.strip()) as my_open_book:
-    # Print every line in the book
     while True:
         the_line = my_open_book.readline()
         print(the_line, end='')
